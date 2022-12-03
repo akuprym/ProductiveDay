@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840A8AEB293BFFB900791AAB /* NotePad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 840A8AE9293BFFB900791AAB /* NotePad.xcdatamodeld */; };
 		842D94A02932C076009FA060 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D949F2932C076009FA060 /* AppDelegate.swift */; };
 		842D94A22932C076009FA060 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D94A12932C076009FA060 /* SceneDelegate.swift */; };
 		842D94A42932C076009FA060 /* ModuleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D94A32932C076009FA060 /* ModuleTableViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840A8AEA293BFFB900791AAB /* Data Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Data Model.xcdatamodel"; sourceTree = "<group>"; };
 		842D949C2932C076009FA060 /* Productor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Productor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842D949F2932C076009FA060 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842D94A12932C076009FA060 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840A8AEC293BFFD600791AAB /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				840A8AE9293BFFB900791AAB /* NotePad.xcdatamodeld */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
 		842D94932932C076009FA060 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 				842D94A12932C076009FA060 /* SceneDelegate.swift */,
 				84501B702932D6A600FD0929 /* Control */,
 				84501B712932D6B300FD0929 /* View */,
+				840A8AEC293BFFD600791AAB /* Data Model */,
 				842D94A82932C077009FA060 /* Assets.xcassets */,
 				842D94AA2932C077009FA060 /* LaunchScreen.storyboard */,
 				842D94AD2932C077009FA060 /* Info.plist */,
@@ -130,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 842D94932932C076009FA060;
+			packageReferences = (
+				840A8AE8293BE21F00791AAB /* XCRemoteSwiftPackageReference "Chameleon" */,
+			);
 			productRefGroup = 842D949D2932C076009FA060 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -157,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840A8AEB293BFFB900791AAB /* NotePad.xcdatamodeld in Sources */,
 				842D94A42932C076009FA060 /* ModuleTableViewController.swift in Sources */,
 				84501B752932D77F00FD0929 /* LessonTableViewController.swift in Sources */,
 				842D94A02932C076009FA060 /* AppDelegate.swift in Sources */,
@@ -378,6 +393,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		840A8AE8293BE21F00791AAB /* XCRemoteSwiftPackageReference "Chameleon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wowansm/Chameleon.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCVersionGroup section */
+		840A8AE9293BFFB900791AAB /* NotePad.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				840A8AEA293BFFB900791AAB /* Data Model.xcdatamodel */,
+			);
+			currentVersion = 840A8AEA293BFFB900791AAB /* Data Model.xcdatamodel */;
+			path = NotePad.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 842D94942932C076009FA060 /* Project object */;
 }
